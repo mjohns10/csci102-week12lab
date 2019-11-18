@@ -11,5 +11,15 @@ def LoadFile(file_name):
     lines_read = file.readlines()
     lines_read = list(map(lambda x:x.strip(),lines_read))     
     return lines_read
-        
+
+def UpdateString(original,second,number):
+    newlist = list(original)
+    otherlist = []
+    for i in range(len(newlist)):
+        if i == number:
+            otherlist.append(second)
+        else:
+            otherlist.append(newlist[i])
+    print('OUTPUT',''.join(otherlist))
+    
     
