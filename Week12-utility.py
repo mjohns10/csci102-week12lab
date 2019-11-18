@@ -6,4 +6,10 @@
 def PrintOutput(word):
     print('OUTPUT',word)
 
-
+def LoadFile(file_name):
+    file = open(file_name,'r')
+    lines_read = file.readlines()
+    lines_read = list(map(lambda x:x.strip(),lines_read))     
+    return lines_read
+        
+    
