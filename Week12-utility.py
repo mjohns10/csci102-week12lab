@@ -50,4 +50,11 @@ def Intersection(list1,list2):
         if word in list2:
             newlist.append(word)
     return newlist
-    
+
+def NotIn(list1,list2):
+    newlist = []
+    for word in list1:
+        if word not in list2:
+            newlist.append(word)
+    return newlist
+
