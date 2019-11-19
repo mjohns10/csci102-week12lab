@@ -44,4 +44,10 @@ def Union(list1,list2):
     newlist = list1 + list2
     return newlist
 
+def Intersection(list1,list2):
+    newlist = []
+    for word in list1:
+        if word in list2:
+            newlist.append(word)
+    return newlist
     
