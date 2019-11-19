@@ -31,5 +31,13 @@ def FindWordCount(my_list,my_string):
         if word == my_string:
             count +=1
     return count
-    
+
+def ScoreFinder(list1,list2,my_string):
+    if my_string in list1:
+        place = list1.index(my_string)
+        score = list2[place]
+        print('OUTPUT',my_string,'got a score of',score)
+    else:
+        print('OUTPUT Player not found')
+        
     
