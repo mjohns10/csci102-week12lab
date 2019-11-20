@@ -24,9 +24,6 @@ def UpdateString(original,second,number):
 
 def FindWordCount(my_list,my_string):
     count = 0
-    my_list = (''.join(my_list))
-    my_list = my_list.split()
-    print(my_list)
     for word in my_list:
         if word == my_string:
             count +=1
