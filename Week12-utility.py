@@ -33,8 +33,14 @@ def FindWordCount(my_list,my_string):
     return count
 
 def ScoreFinder(list1,list2,my_string):
-    if my_string in list1:
-        place = list1.index(my_string)
+    word1 = my_string.capitalize()
+    word2 = my_string.lower()
+    if word1 in list1:
+        place = list1.index(word1)
+        score = list2[place]
+        print('OUTPUT',my_string,'got a score of',score)
+    elif word2 in list1:
+        place = list1.index(word2)
         score = list2[place]
         print('OUTPUT',my_string,'got a score of',score)
     else:
